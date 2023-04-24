@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///opt/homebrew/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Wed Feb  1 19:37:39 2023 as: nmap -PN -p- -T4 -n -v -oA output 192.168.2.1 -->
+<nmaprun scanner="nmap" args="nmap -PN -p- -T4 -n -v -oA output 192.168.2.1" start="1675298259" startstr="Wed Feb  1 19:37:39 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Connect Scan" time="1675298259"/>
+<taskprogress task="Connect Scan" time="1675298290" percent="21.44" remaining="114" etc="1675298404"/>
+<taskprogress task="Connect Scan" time="1675298320" percent="43.53" remaining="80" etc="1675298399"/>
+<taskprogress task="Connect Scan" time="1675298350" percent="63.64" remaining="52" etc="1675298402"/>
+<taskend task="Connect Scan" time="1675298419" extrainfo="65535 total ports"/>
+<host starttime="1675298259" endtime="1675298419"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.2.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="64510">
+<extrareasons reason="conn-refused" count="64510" proto="tcp" ports="135,137,1024-1989,1991-8999,9001-10079,10081-49153,49155-65535"/>
+</extraports>
+<extraports state="filtered" count="1016">
+<extrareasons reason="no-response" count="1016" proto="tcp" ports="1-52,54-79,81-134,136,138,140-442,444,446-1023"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1990"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="stun-p1" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="cslistener" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="amanda" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="6752" rttvar="1758" to="100000"/>
+</host>
+<runstats><finished time="1675298419" timestr="Wed Feb  1 19:40:19 2023" summary="Nmap done at Wed Feb  1 19:40:19 2023; 1 IP address (1 host up) scanned in 160.04 seconds" elapsed="160.04" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

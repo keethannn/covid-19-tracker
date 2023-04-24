@@ -1,0 +1,17 @@
+# Nmap 7.93 scan initiated Wed Feb  1 19:37:39 2023 as: nmap -PN -p- -T4 -n -v -oA output 192.168.2.1
+Nmap scan report for 192.168.2.1
+Host is up (0.0068s latency).
+Not shown: 64510 closed tcp ports (conn-refused), 1016 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+53/tcp    open  domain
+80/tcp    open  http
+139/tcp   open  netbios-ssn
+443/tcp   open  https
+445/tcp   open  microsoft-ds
+1990/tcp  open  stun-p1
+9000/tcp  open  cslistener
+10080/tcp open  amanda
+49154/tcp open  unknown
+
+Read data files from: /opt/homebrew/bin/../share/nmap
+# Nmap done at Wed Feb  1 19:40:19 2023 -- 1 IP address (1 host up) scanned in 160.04 seconds
