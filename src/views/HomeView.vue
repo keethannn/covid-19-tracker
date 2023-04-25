@@ -1,13 +1,13 @@
 <template>
 	<main v-if="!loading">
 		<DataTitle :text="title" :dataDate="dataDate"/>
-		<DataBoxes :stats="stats"/>
 		<CountrySelect @get-country="getCountryData" :countries="countries"/>
+		<DataBoxes :stats="stats"/>
 		<button @click="clearCountryData" v-if="stats.Country" class="bg-green-700 text-white rounded p-3 mt-10 focus:outline-none hover:bg-green-600">
 			Clear Country
 		</button>
 	</main>
-	<main class="flex flex-col align-center justify-center" v-else>
+	<main v-else class="flex flex-col align-center justify-center" >
 		<div class="text-gray-500 text-3xl mt-10 mb-6">
 			Fetching data
 		</div>
@@ -19,6 +19,7 @@
 import DataTitle from '@/components/DataTitle'
 import DataBoxes from '@/components/DataBoxes'
 import CountrySelect from '@/components/CountrySelect'
+
 
 
 export default {
